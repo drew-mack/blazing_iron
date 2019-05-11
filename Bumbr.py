@@ -1,33 +1,33 @@
 class Bumbr:
     def __init__(self):
         self.number = list([
-            [0, ''],
-            [0, 'thousand'],
-            [0, 'million'],
-            [0, 'billion'],
-            [0, 'trillion'],
-            [0, 'quadrillion'],
-            [0, 'quintillion'], # 2^64
-            [0, 'sextillion'],
-            [0, 'septillion'],
-            [0, 'octillion'],
-            [0, 'nonillion'],
-            [0, 'decillion'], # 2^128
-            [0, 'undecillon'],
-            [0, 'duodecillion'],
-            [0, 'tredecillion'],
-            [0, 'quattuordecillion'],
-            [0, 'quinquadecillion'],
-            [0, 'sedecillion'],
-            [0, 'septendecillion'],
-            [0, 'octodecillion'],
-            [0, 'novendecillion'],
-            [0, 'vigintillion'],
-            [0, 'uvigintillion'],
-            [0, 'duovigintillion'],
-            [0, 'tresvigintillion'],
-            [0, 'quattuorvigintillion'], # 2^256
-            [0, 'zillion'] # tm starts here
+            [0, '']                     , # 0
+            [0, 'thousand']             , # 1
+            [0, 'million']              , # 2
+            [0, 'billion']              , # 3
+            [0, 'trillion']             , # 4
+            [0, 'quadrillion']          , # 5 
+            [0, 'quintillion']          , # 6  # 2^64
+            [0, 'sextillion']           , # 7 
+            [0, 'septillion']           , # 8
+            [0, 'octillion']            , # 9
+            [0, 'nonillion']            , # 10
+            [0, 'decillion']            , # 11 # 2^128
+            [0, 'undecillon']           , # 12
+            [0, 'duodecillion']         , # 13
+            [0, 'tredecillion']         , # 14
+            [0, 'quattuordecillion']    , # 15
+            [0, 'quinquadecillion']     , # 16
+            [0, 'sedecillion']          , # 17
+            [0, 'septendecillion']      , # 18
+            [0, 'octodecillion']        , # 19
+            [0, 'novendecillion']       , # 20
+            [0, 'vigintillion']         , # 21
+            [0, 'uvigintillion']        , # 22
+            [0, 'duovigintillion']      , # 23
+            [0, 'tresvigintillion']     , # 24
+            [0, 'quattuorvigintillion'] , # 25 # 2^256 
+            [0, 'zillion']              , # 26 # tm starts here
         ])
         self.high_index = 0
 
@@ -92,18 +92,17 @@ class Bumbr:
     def check_highest(self, bumbr):
         index = 0
         for x in range(1, len(bumbr) + 1):
-            if bumbr[len(bumbr) - x][0] > 0:
+            if int(bumbr[len(bumbr) - x][0]) > 0:
                 index = len(bumbr) - x
                 return index
         return index
 
 if __name__ == '__main__':
     b = Bumbr()
-    b.add('1,000')
+    b.add('349,623')
     print(b)
-    b.add('3,128')
+    b.sub('39,823')
     print(b)
-    b.add('9,901')
+    b.sub('150,212')
     print(b)
-    b.add('3,925')
-    print(b)
+
