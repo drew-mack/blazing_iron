@@ -4,4 +4,4 @@
 .. -- / -- .- -.- .. -. / .- / -.-. --- .-- / -.-. .-.. .. -.-. -.- . .-. / --- ...- . .-. / .... . .-. .
 
 #### bumbr.py
-this class is meant to allow for better control of numbers & how they're represented, along with much modular capacity capacity restraints.
+this class is meant to allow for better control of numbers & how they're represented, along with much modular capacity restraints.
